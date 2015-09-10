@@ -40,7 +40,7 @@
 
 	/* Fixed header and footer.
 	* --------------------------------------- */
-	#header {
+	#header, #footer {
 		position:fixed;
 		height: 100px;
 		display:block;
@@ -48,11 +48,18 @@
 		width: 100%;
 		background: white url("http://i.imgur.com/szvPpnC.png") no-repeat;
 		z-index:9;
-		top:0px;
   		vertical-align: middle;
 		padding-left: 100px;
 		color: black;
 
+	}
+	
+	#header {
+				top:0px;
+	}
+	
+	#footer {
+		bottom:0px;
 	}
 
 	#header a {
@@ -208,6 +215,7 @@
 
 <div id="header"><a href="#about">About Us</a><a href="#sponsor">Sponsor a Child</a><a href="#events">Events</a><a href="#contact">Contact Us</a><a href="#donate" id="donate">Donate</a></div>
 
+<div id="footer">Growth for Under Developed Societies</div>
 <div id="fullpage">
 	/** THIS IS THE FIRST PAGE **/
 	<div class="section " id="section0" style="padding-top: 100px">
